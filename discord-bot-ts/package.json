@@ -1,0 +1,30 @@
+{
+  "name": "discord-bot-ts",
+  "version": "1.0.0",
+  "description": "A Discord bot built with TypeScript",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.0",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^1.1.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "typescript"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT"
+}

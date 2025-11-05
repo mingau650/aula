@@ -1,6 +1,6 @@
 import { Client, GatewayIntentBits } from 'discord.js';
-import { loadEvents } from './client';
-import { config } from './config';
+import loadEventsFromClient from './client';
+import config from './config';
 
 const client = new Client({
     intents: [
@@ -14,6 +14,8 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user?.tag}!`);
 });
 
-loadEvents(client);
+export default function loadEvents(client: Client) {
 
-client.login(config.TOKEN);
+}
+
+client.login(config.token);

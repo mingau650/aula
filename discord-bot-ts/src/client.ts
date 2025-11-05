@@ -1,5 +1,5 @@
 import { Client, GatewayIntentBits } from 'discord.js';
-import { token } from './config';
+import token from './config';
 
 const client = new Client({
     intents: [
@@ -9,6 +9,6 @@ const client = new Client({
     ],
 });
 
-client.login(token);
+client.login(token.token);
 
 export default client;
